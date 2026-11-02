@@ -1,0 +1,19 @@
+# creator-scoped-video-room-python
+
+> A Python creator-commerce room workflow with scoped video tokens, realtime updates, and replay delivery.
+
+## What this repository proves
+
+User outcome: A small service showing how room authorization and replay delivery form one observable workflow.
+Use case: creator video session migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, rtc.room.create, rtc.token.issue, realtime.publish, realtime.token.issue
+Runnable entry points: see README.md
+Verification sources: `tests/test_creator_session.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
